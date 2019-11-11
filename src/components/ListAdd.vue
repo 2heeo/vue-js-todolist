@@ -22,7 +22,7 @@ export default {
     }
   },
   created() {
-    eventBus.$on('listEdit', (memo, index) => {
+    eventBus.$on("listEdit", (memo, index) => {
       this.memo = memo
       this.index = index
       this.mode = "edit"
@@ -35,7 +35,7 @@ export default {
       } else {
         this.$emit("listAdd", this.memo)
         this.memo = null
-      }      
+      }
     },
     listEdit() {
       if(this.memo === null) {
@@ -44,7 +44,7 @@ export default {
         this.$emit("listEdit", this.memo, this.index)
         this.memo = null
         this.mode = "add"
-      }      
+      }
     }
   }
 }

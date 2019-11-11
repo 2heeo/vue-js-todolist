@@ -3,9 +3,9 @@
     <v-card
       class="pa-3 mb-3"
       :class="{'done': list.status === 'done'}"
-      v-for="(list, index) in todoList" 
+      v-for="(list, index) in todoList"
       :key="index"
-      >
+    >
       <p>{{ list.memo }}</p>
       <v-btn
         v-if="list.status === 'created'"
@@ -18,7 +18,7 @@
       <v-btn 
         @click="$emit('listDelete', index)"
         fab flat small color="red"><i class="fas fa-trash-alt"></i></v-btn>
-      <v-btn 
+      <v-btn
         @click="listEdit(list.memo, index)"
         v-if="list.status === 'created'"
         fab flat small color="yellow"><i class="fas fa-edit"></i></v-btn>
@@ -40,6 +40,6 @@ export default {
 
 <style scoped>
   /* scoped를 쓰면 이 파일 안에서만 스타일 적용됨 */
-  .done{background-color:rgba(0,0,0,0.1)};
-  .done p{text-decoration:line-through;color:rgba(0,0,0,0.5)};
+  .done{background-color:rgba(0,0,0,0.1)}
+  .done p{text-decoration:line-through;color: rgba(0,0,0,0.5)}
 </style>
