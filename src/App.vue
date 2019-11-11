@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="text-center">TODO</h1>
+        <input type="text" class="form-control" v-model="userIput">
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
   components: {
-    HelloWorld
   }
 }
 </script>
