@@ -1,24 +1,9 @@
-# my-project
+# TODO List
+## 기능
+- 할 일 추가 / 삭제/ 수정/ 완료 처리 
+## 화면
+![img_todolist](./src/img/img_todolist.gif)
+### 기타
+- vuetify 적용
+- fontAwesome 적용(아이콘)
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
